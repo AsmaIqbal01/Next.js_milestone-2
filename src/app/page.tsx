@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import Image from 'next/image'; // Import the Image component
 
 export default function Home() {
   return (
@@ -24,10 +24,12 @@ export default function Home() {
 
       {/* Image Container */}
       <div className="flex-shrink-0 w-64 h-64 md:w-80 md:h-80 mt-8 md:mt-0">
-        <img
-          src="/Images/Hello-Girl.gif" // Replace with your image path
+        <Image
+          src="/Images/Hello-Girl.gif" // Ensure this path is correct
           alt="Asma Iqbal"
-          className="w-full h-full object-cover rounded-full shadow-lg"
+          width={620} // Set the width
+          height={620} // Set the height
+          className="rounded-full shadow-lg"
         />
       </div>
     </div>
