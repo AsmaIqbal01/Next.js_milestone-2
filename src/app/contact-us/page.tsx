@@ -64,14 +64,11 @@ const Contact = () => {
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1" htmlFor="message">Message</label>
             <textarea
-              id="message"
-              value={message} // Controlled input
-              onChange={(e) => setMessage(e.target.value)} // Update state on change
-              className="w-full p-2 border border-gray-300 rounded text-black"
-              placeholder="Write your message"
-              rows="4"
-              required
-            ></textarea>
+  className="w-full p-2 border border-gray-300 rounded text-black"
+  placeholder="Write your message"
+  rows={4}  // Change this from "4" (string) to 4 (number)
+  required
+></textarea>
           </div>
           <button type="submit" className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">
             Send Message
