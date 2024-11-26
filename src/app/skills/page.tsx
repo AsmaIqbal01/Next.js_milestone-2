@@ -23,7 +23,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-600 to-black text-white">
+    <div className={`min-h-screen flex flex-col items-center justify-center transition-colors duration-300 ${isScrolled ? 'bg-gray-800' : 'bg-gradient-to-r from-purple-600 to-black'} text-white`}>
       <h1 className="text-4xl font-bold mt-10">My Skills</h1>
       <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
         <div className="flex flex-col items-center transition-transform duration-300 hover:scale-110">

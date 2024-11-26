@@ -1,8 +1,7 @@
 // app/layout.tsx
 import './globals.css'; // Import your global styles
 import { ReactNode } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import {  faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Footer from '@/components/Footer'; // Assuming you have a Footer component
 import Navbar from '@/components/Navbar'; // Assuming you have a Header component
 
